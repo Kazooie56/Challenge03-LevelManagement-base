@@ -19,8 +19,7 @@ public class LevelChangeTrigger : MonoBehaviour
 
             // tell the level manager to change levels
 
-            levelManager.LevelChange();
-            //levelManager.LevelChange(levelManager, spawnLocation);
+            levelManager.LevelChange(levelToActivate, spawnLocation);
         }
     }
 }
