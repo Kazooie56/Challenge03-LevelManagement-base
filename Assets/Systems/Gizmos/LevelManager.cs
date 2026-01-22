@@ -6,6 +6,10 @@ public class LevelManager : MonoBehaviour
     public GameObject level02;
 
     private GameObject currentActiveLevel;
+    private GameObject levelManager;
+    private Transform spawnLocation;
+
+    private GameObject Player;
 
     public void LevelChange()
     {

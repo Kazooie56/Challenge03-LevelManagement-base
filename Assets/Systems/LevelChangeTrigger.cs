@@ -4,6 +4,9 @@ public class LevelChangeTrigger : MonoBehaviour
 {
     public LevelManager levelManager;
 
+    public GameObject levelToActivate;
+    public Transform spawnLocation;
+
     private void Start()
     {
         levelManager = FindAnyObjectByType<LevelManager>();
@@ -17,7 +20,7 @@ public class LevelChangeTrigger : MonoBehaviour
             // tell the level manager to change levels
 
             levelManager.LevelChange();
-
+            //levelManager.LevelChange(levelManager, spawnLocation);
         }
     }
 }
